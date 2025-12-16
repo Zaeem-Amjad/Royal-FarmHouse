@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Royal Farming House - Fresh organic farm produce and farm tours">
+    <title>Royal Farming House - Fresh from Our Fields to Your Table</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <!-- Header / Navigation -->
+    <header id="header" class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="assets/images/cover.jpg" alt="Royal Farming House Logo">
+                <span>Royal Farming House</span>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home" data-nav-link>Home</a></li>
+                <li><a href="#about" data-nav-link>About</a></li>
+                <li><a href="#tours" data-nav-link>Tours</a></li>
+                <li><a href="#contact" data-nav-link>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" data-section="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Royal Farming House</h1>
+            <p class="hero-subtitle">Fresh from our fields to your table</p>
+            <p class="hero-description">Experience the finest organic produce, grown with care and delivered with pride. Join our community of health-conscious families who choose quality and sustainability.</p>
+            <div class="hero-buttons">
+                <a href="#tours" class="btn btn-primary" data-nav-link>Book a Tour</a>
+                <a href="#contact" class="btn btn-secondary" data-nav-link>Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section" data-section="about">
+        <div class="container">
+            <h2 class="section-title">About Our Farm</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Royal Farming House has been a cornerstone of sustainable agriculture for over two generations. What started as a small family farm has grown into a thriving community-supported agricultural enterprise, dedicated to bringing the freshest, highest-quality organic produce to your table.</p>
+                    
+                    <p>Our commitment goes beyond just growing food. We practice regenerative farming techniques that enrich the soil, support biodiversity, and create a sustainable ecosystem. Every seed planted, every crop harvested reflects our dedication to environmental stewardship and the health of our community.</p>
+                    
+                    <p>We believe in transparency, quality, and building lasting relationships with our customers. When you choose Royal Farming House, you're not just buying produce – you're becoming part of a movement toward healthier living and a more sustainable future.</p>
+                    
+                    <div class="why-choose">
+                        <h3>Why Choose Us</h3>
+                        <ul>
+                            <li><strong>100% Local:</strong> All produce grown on our family farm</li>
+                            <li><strong>Certified Organic:</strong> No pesticides, no synthetic fertilizers</li>
+                            <li><strong>Daily Harvest:</strong> Picked fresh every morning</li>
+                            <li><strong>Sustainable Practices:</strong> Regenerative agriculture methods</li>
+                            <li><strong>Community First:</strong> Supporting local food systems</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-gallery">
+                    <img src="assets/images/card 1.jpg" alt="Farm fields at sunrise" class="reveal-on-scroll">
+                    <img src="assets/images/card 2.jpg" alt="Farmer harvesting vegetables" class="reveal-on-scroll">
+                    <img src="assets/images/card 3.jpg" alt="Fresh organic produce" class="reveal-on-scroll">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Farm Tours Section -->
+    <section id="tours" class="tours section" data-section="tours">
+        <div class="container">
+            <h2 class="section-title">Farm Tours</h2>
+            <p class="section-subtitle">Experience farm life and learn about sustainable agriculture</p>
+            
+            <div class="tours-content">
+                <div class="tours-info reveal-on-scroll">
+                    <h3>What to Expect</h3>
+                    <p>Join us for an educational and inspiring tour of Royal Farming House. Our guided tours offer a hands-on experience where you'll learn about organic farming practices, meet our animals, and see where your food comes from.</p>
+                    
+                    <ul class="tours-features">
+                        <li>90-minute guided walking tour</li>
+                        <li>Learn about regenerative agriculture</li>
+                        <li>Meet our farm animals</li>
+                        <li>Sample fresh produce</li>
+                        <li>Perfect for families and groups</li>
+                        <li>Educational for all ages</li>
+                    </ul>
+                    
+                    <p><strong>Available Time Slots:</strong> 9:00 AM, 11:00 AM, 2:00 PM, 4:00 PM</p>
+                    <p><strong>Duration:</strong> 1.5 hours</p>
+                    <p><strong>Price:</strong> $15 per person (children under 5 free)</p>
+                </div>
+                
+                <div class="tours-form reveal-on-scroll">
+                    <h3>Book Your Tour</h3>
+                    <form id="bookingForm" class="form">
+                        <div class="form-group">
+                            <label for="bookingName">Your Name: *</label>
+                            <input type="text" id="bookingName" name="visitor_name" required class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="bookingEmail">Email: *</label>
+                            <input type="email" id="bookingEmail" name="email" required class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="bookingDate">Preferred Date: *</label>
+                            <input type="date" id="bookingDate" name="date" required class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="bookingTime">Time Slot: *</label>
+                            <select id="bookingTime" name="time_slot" required class="form-control">
+                                <option value="">Select a time</option>
+                                <option value="9:00 AM">9:00 AM</option>
+                                <option value="11:00 AM">11:00 AM</option>
+                                <option value="2:00 PM">2:00 PM</option>
+                                <option value="4:00 PM">4:00 PM</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="bookingParticipants">Number of Participants: *</label>
+                            <input type="number" id="bookingParticipants" name="participants" min="1" max="20" required class="form-control">
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">Book Tour</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section" data-section="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            
+            <div class="contact-content">
+                <div class="contact-info reveal-on-scroll">
+                    <h3>Visit Our Farm</h3>
+                    <p><strong>Address:</strong><br>
+                    123 Green Valley Road<br>
+                    Farmville, State 12345</p>
+                    
+                    <p><strong>Phone:</strong><br>
+                    (555) 123-4567</p>
+                    
+                    <p><strong>Email:</strong><br>
+                    info@royalfarminghouse.com</p>
+                    
+                    <p><strong>Hours:</strong><br>
+                    Monday - Saturday: 8:00 AM - 6:00 PM<br>
+                    Sunday: 9:00 AM - 4:00 PM</p>
+                    
+                    <div class="map-placeholder">
+                        <img src="assets/images/cover 2.jpg" alt="Farm location map">
+                    </div>
+                </div>
+                
+                <div class="contact-form reveal-on-scroll">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm" class="form">
+                        <div class="form-group">
+                            <label for="contactName">Name: *</label>
+                            <input type="text" id="contactName" name="name" required class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactEmail">Email: *</label>
+                            <input type="email" id="contactEmail" name="email" required class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactSubject">Subject: *</label>
+                            <input type="text" id="contactSubject" name="subject" required class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactMessage">Message: *</label>
+                            <textarea id="contactMessage" name="message" required class="form-control" rows="5"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Royal Farming House</h4>
+                    <p>Fresh organic produce from our fields to your table.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#tours">Tours</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>123 Green Valley Road<br>Farmville, State 12345<br>(555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Royal Farming House. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
